@@ -1,0 +1,153 @@
+/* Put global variables here */
+:root {
+   --seahawk-blue: #003087;
+   --seahawk-green: rgb(0, 106, 56);
+   --seahawk-silver: #888;
+   --seahawk-white: #bbb;
+
+   --text-color-body: black;
+
+   --base-size: 16px;
+
+   --bg-color: var(--seahawk-blue);
+   --section-color: var(--seahawk-silver);
+   --subsection-color: var(--seahawk-white);
+}
+
+body {
+   background-color: var(--bg-color);
+   font-family: sans-serif;
+
+   color: var(--text-color-body);
+   font-size: var(--base-size);
+   line-height: 1.5em;
+}
+
+h2 {
+   font-family: Lobster, monospace;
+   color: var(--seahawk-green, green);
+   height: 60px;
+   background-color: var(--seahawk-silver, silver);
+   font-size: calc(var(--base-size) * 2);
+   opacity: 0.7;
+}
+
+h3 {
+   text-transform: uppercase;
+   font-size: calc(var(--base-size) * 1.5);
+   font-weight: 600;
+}
+
+/*       p {
+              font-size: 16px;
+              font-family: monospace;
+              text-align: justify;
+              line-height: 1.25em;
+            }
+       */
+/*       .smaller-image {
+              width: 200px;
+            } */
+
+.green-border {
+   border-color: var(--seahawk-green, green);
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 10px;
+}
+
+.list {
+   background-color: var(--seahawk-silver, silver);
+   padding: 20px;
+}
+
+#seahawks-form {
+   background-color: rgb(0, 106, 56);
+   border-radius: 10%;
+   padding: 0px 20px 40px 80px;
+   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+ul,
+ol {
+   margin: 20px;
+   background-color: var(--subsection-color);
+   border-color: var(--seahawk-green);
+   line-height: 1.5em;
+}
+
+.list-title {
+   margin-left: -30px;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   height: 25px;
+}
+
+.body-text {
+   padding-top: 40px;
+   padding-right: 80px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   background-color: white;
+   width: 600px;
+}
+
+[type="checkbox"] {
+   margin-top: 1em;
+   margin-bottom: 3em;
+}
+
+a:hover {
+   color: green;
+}
+
+em {
+   position: relative;
+   bottom: 5px;
+}
+
+form {
+   position: relative;
+}
+
+#submitButton {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   border-radius: 50%;
+   height: 78px;
+   width: 78px;
+}
+
+.floating-image-1 {
+   position: fixed;
+   width: 75px;
+   bottom: 20px;
+   left: 20px;
+   z-index: 3;
+}
+.floating-image-2 {
+   position: fixed;
+   width: 75px;
+   bottom: 10px;
+   left: 10px;
+   z-index: 2;
+}
+/*       .center-image {
+              width: 75px;
+              margin: 50px;
+            } */
+
+footer {
+   background-color: var(--seahawk-green);
+   height: 50px;
+   width: 200px;
+   margin: auto;
+}
+
+@media (max-width: 400px) {
+   :root {
+      --text-color-body: var(--seahawk-blue);
+      --background-color: var(--seahawk-silver);
+   }
+}

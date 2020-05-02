@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Hello!</title>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Bootstrap (needs to be above style.css to use my styles I think)-->
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+         crossorigin="anonymous"
+      />
+
+      <!-- import the webpage's stylesheet -->
+      <link rel="stylesheet" href="/style.css" />
+
+      <!-- import the webpage's javascript file -->
+      <script src="/script.js" defer></script>
+
+      <!-- This needs to be above the <script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+         rel="stylesheet"
+      />
+
+      <script>
+         $(document).ready(function () {
+            // $("button").addClass("animated bounce");
+            // $(".well").addClass("animated shake");
+            // $("#target3").addClass("animated fadeOut");
+            // $("button").addClass("animated bounce");
+            // $(".well").addClass("animated shake");
+            // $("#target3").addClass("animated fadeOut");
+            // $("button").removeClass("btn-default");
+            $("#target1").css("color", "red");
+            $("#target1").prop("disabled", true);
+            $("#target4").html("<em>#target4</em>");
+            $("#target4").remove();
+            $("#target2").appendTo("#right-well");
+            $("#target5").clone().appendTo("#left-well");
+            $("#target1").parent().css("background-color", "red");
+            $("#right-well").children().css("color", "orange");
+            $(".target:nth-child(2)").addClass("animated bounce");
+            $(".target:even").addClass("animated shake");
+            // $("body").addClass("animated hinge");
+         });
+      </script>
+
+      <link
+         href="https://fonts.googleapis.com/css?family=Lobster"
+         rel="stylesheet"
+         type="text/css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+         crossorigin="anonymous"
+      />
+
+      <style></style>
+   </head>
+   <body>
+      <!--<h1>Hello world!</h1>-->
+
+      <!-- Only change code above this line -->
+      <div class="container-fluid">
+         <h3 class="text-primary text-center">jQuery Playground</h3>
+         <div class="row">
+            <div class="col-xs-6">
+               <h4>#left-well</h4>
+               <div class="well" id="left-well">
+                  <button class="btn btn-default target" id="target1">
+                     #target1
+                  </button>
+                  <button class="btn btn-default target" id="target2">
+                     #target2
+                  </button>
+                  <button class="btn btn-default target" id="target3">
+                     #target3
+                  </button>
+               </div>
+            </div>
+            <div class="col-xs-6">
+               <h4>#right-well</h4>
+               <div class="well" id="right-well">
+                  <button class="btn btn-default target" id="target4">
+                     #target4
+                  </button>
+                  <button class="btn btn-default target" id="target5">
+                     #target5
+                  </button>
+                  <button class="btn btn-default target" id="target6">
+                     #target6
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xs-8">
+               <h2 class="text-primary text-center">
+                  Seattle Seahawks 1984 Season
+               </h2>
+            </div>
+            <div class="col-xs-4">
+               <img
+                  src="https://content.sportslogos.net/logos/7/180/full/995.png"
+                  alt="Seahawks logo 1976-2001"
+                  class="img-responsive"
+               />
+            </div>
+         </div>
+
+         <img
+            src="https://komonews.com/resources/media/050a7f4c-d21a-433b-9f7f-c4375d2c22c2-large16x9_Eas.jpg?1486257826995"
+            alt="Kenny Easley in 1984 playoff game against the Miami Dolphins."
+            class="img-responsive"
+         />
+
+         <p>
+            <a href="#pagebottom">Bottom of page</a>
+         </p>
+         <main>
+            <div class="row body-text">
+               <div class="col-xs-12 col-sm-6">
+                  <img
+                     class="img-responsive"
+                     src="https://cdn.vox-cdn.com/thumbor/h7_nsbBszE-q1Qcue9Wj4-omFzk=/0x0:3600x2430/920x613/filters:focal(1684x547:2260x1123):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64722162/481877109.jpg.0.jpg"
+                  />
+               </div>
+               <div class="col-xs-12 col-sm-6">
+                  <p>
+                     The 1984
+                     <a
+                        href="https://en.wikipedia.org/wiki/Seattle_Seahawks"
+                        target="_blank"
+                        >Seattle Seahawks</a
+                     >
+                     season was the team's ninth season with the National
+                     Football League. The season opener was moved from Sunday to
+                     Monday afternoon on Labor Day to avoid a conflict with the
+                     Seattle Mariners baseball game.
+                  </p>
+               </div>
+
+               <p>
+                  The 1984 Seahawks were a <u>well-balanced</u> team on offense
+                  and defense. They scored <strong>418</strong> points (26.1 per
+                  game), and gave up only <strong>282</strong> points (17.6 per
+                  game), both ranked 5th in the NFL. Their point differential of
+                  +136 points was third in the NFL; the Seahawks'
+                  giveaway/takeway ratio was +24,
+                  <span class="text-danger">best</span> in the league. The
+                  team's 63 defensive takeaways is the most in NFL history for a
+                  16-game schedule, and the most <s>ever</s> since the merger.
+               </p>
+            </div>
+
+            <div class="list">
+               <h3 class="list-title">
+                  Notable Player Stats
+               </h3>
+
+               <ul class="green-border">
+                  <li>Dave Krieg 3,671 <em>passing</em> yards</li>
+                  <li>Steve Largent 1,164 <em>receiving</em> yards</li>
+                  <li>
+                     Jeff Bryant and Jacob Green registering 14.5 and 13 sacks,
+                     respectively
+                  </li>
+                  <li>
+                     Kenny Easley led the team and league with 10 interceptions
+                  </li>
+               </ul>
+
+               <h3>
+                  Opponents
+               </h3>
+
+               <ol>
+                  <li>Browns</li>
+                  <li>Chargers</li>
+                  <li>Patriots</li>
+                  <li>Bears</li>
+                  <li>Vikings</li>
+                  <li>Raiders</li>
+                  <li>Bills</li>
+                  <li>Packers</li>
+                  <li>Chargers</li>
+                  <li>Chiefs</li>
+                  <li>Raiders</li>
+                  <li>Bengals</li>
+                  <li>Broncos</li>
+                  <li>Lions</li>
+                  <li>Chiefs</li>
+                  <li>Broncos</li>
+                  <hr />
+                  <li>Raiders (Wildcard Round)</li>
+                  <li>Dolphins (Divisional Round)</li>
+               </ol>
+
+               <h3>
+                  Pro Bowlers
+               </h3>
+
+               <div style="height: 200px;">
+                  <div style="float: left;">
+                     <h4>
+                        Offense
+                     </h4>
+                     <ul>
+                        <li>QB Dave Kreig</li>
+                        <li>WR Steve Largent</li>
+                     </ul>
+                  </div>
+
+                  <div style="float: right;">
+                     <h4>
+                        Defense/ST
+                     </h4>
+                     <ul>
+                        <li>CB Dave Brown</li>
+                        <li>LB Fredd Young</li>
+                        <li>NT Joe Nash</li>
+                        <li>PR/SS Kenny Easley</li>
+                        <li>K Norm Johnson</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <p>
+               Click
+               <a
+                  href="https://en.wikipedia.org/wiki/1984_Seattle_Seahawks_season"
+                  target="_blank"
+                  >here</a
+               >
+               to view more.
+            </p>
+
+            <form action="/submit-email" id="seahawks-form">
+               <h3>
+                  Please fill out this form
+               </h3>
+               Would you would like to know more? Send me your email.
+               <!--           <input type="text" class="form-control" placeholder="email@lkjewoisdfnkl.com" requried /> -->
+
+               <div class="row">
+                  <div class="col-xs-7">
+                     <input
+                        type="text"
+                        class="form-control"
+                        placeholder="email@lkjewoisdfnkl.com"
+                        required
+                     />
+                  </div>
+                  <div class="col-xs-5">
+                     <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-paper-plane"></i> Submit
+                     </button>
+                  </div>
+               </div>
+
+               <p>Are you a Seahawks fan?</p>
+               <div class="row">
+                  <div class="col-xs-6">
+                     <label for="yes"
+                        ><input
+                           id="yes"
+                           value="yes"
+                           type="radio"
+                           name="fan"
+                           checked
+                        />Yes</label
+                     >
+                  </div>
+                  <div class="col-xs-6">
+                     <label for="no"
+                        ><input
+                           id="no"
+                           value="no"
+                           type="radio"
+                           name="fan"
+                        />No</label
+                     >
+                  </div>
+               </div>
+
+               <p>How do you watch/listen to Seahawks games?</p>
+               <div class="row">
+                  <div class="col-xs-4">
+                     <label for="TV"
+                        ><input
+                           id="TV"
+                           value="TV"
+                           type="checkbox"
+                           name="watch"
+                           checked
+                        />Watch on TV</label
+                     >
+                  </div>
+                  <div class="col-xs-4">
+                     <label for="radio"
+                        ><input
+                           id="radio"
+                           value="radio"
+                           type="checkbox"
+                           name="watch"
+                        />Listen to the Radio</label
+                     >
+                  </div>
+                  <div class="col-xs-4">
+                     <label for="stadium"
+                        ><input
+                           id="stadium"
+                           value="stadium"
+                           type="checkbox"
+                           name="watch"
+                        />Go to the Stadium</label
+                     >
+                  </div>
+               </div>
+               <button type="submit" id="submitButton">
+                  <i class="fa fa-paper-plane"></i> Submit
+               </button>
+            </form>
+
+            <!--         <p><a href="#">Dead link</a></p> -->
+
+            <div class="row">
+               <div class="col-xs-4">
+                  <button class="btn btn-block btn-primary">
+                     <i class="fas fa-thumbs-up"></i> Like
+                  </button>
+               </div>
+               <div class="col-xs-4">
+                  <button class="btn btn-block btn-info">
+                     <i class="fas fa-info-circle"></i> Info
+                  </button>
+               </div>
+               <div class="col-xs-4">
+                  <button class="btn btn-block btn-danger">
+                     <i class="fas fa-trash"></i> Delete
+                  </button>
+               </div>
+            </div>
+
+            <!--       <p id="pagebottom">
+          This is the bottom of the page.
+        </p>
+         -->
+            <img
+               src="https://content.sportslogos.net/logos/7/180/full/995.png"
+               alt="Seahawks logo 1976-2001"
+               class="floating-image-1"
+            />
+            <img
+               src="https://content.sportslogos.net/logos/7/180/full/995.png"
+               alt="Seahawks logo 1976-2001"
+               class="floating-image-2"
+            />
+         </main>
+         <footer id="pagebottom"></footer>
+      </div>
+   </body>
+</html>
